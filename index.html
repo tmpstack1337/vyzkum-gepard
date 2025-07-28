@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Výzkum GEPARD FINANCE</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --header-bg: #F8F8F8;
+      --page-bg: #8CC740;
+      --menu-bg: #F8F8F8;
+      --header-text: #3C3D3D;
+      --iframe-height-desktop: 16600px;
+      --iframe-height-mobile: 17200px;
+      --footer-bg: #3C3D3D;
+      --footer-text: #fff;
+      --footer-link-hover: #8CC740;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: var(--page-bg); color: #000; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
+    header { background-color: var(--header-bg); color: var(--header-text); display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1rem; position: sticky; top: 0; z-index: 1000; }
+    .logo img { height: 80px; }
+    nav ul { list-style: none; display: flex; gap: 1rem; background: var(--menu-bg); }
+    nav a { text-decoration: none; color: var(--header-text); font-weight: 600; }
+    .menu-toggle { display: none; }
+    .hamburger { display: none; flex-direction: column; cursor: pointer; }
+    .hamburger span { height: 3px; width: 25px; background: var(--header-text); margin: 4px 0; transition: 0.3s; }
+    @media (max-width: 768px) {
+      nav ul { display: none; position: absolute; right: 0; top: 100%; flex-direction: column; width: 200px; padding: 1rem; }
+      .menu-toggle:checked + .hamburger + ul { display: flex; }
+      .hamburger { display: flex; }
+    }
+    main { flex: 1; }
+    #intro { padding: 2rem 1rem; text-align: center; }
+    #intro h1 { font-size: 2rem; margin-bottom: 1rem; }
+    #intro p { margin-bottom: 1rem; line-height: 1.4; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background: #000; color: #fff; text-decoration: none; font-weight: 600; border-radius: 4px; transition: background 0.3s; }
+    .btn:hover { background: #333; }
+    #form { padding: 0; }
+    #form iframe { width: 100%; height: var(--iframe-height-desktop); border: none; }
+    @media (max-width: 768px) { #form iframe { height: var(--iframe-height-mobile); } }
+
+    /* Footer */
+    footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      padding: 2rem 0 0 0;
+      margin-top: auto;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+    .footer-logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .footer-logo img { height: 60px; }
+    .footer-section h4 { font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .footer-section ul { list-style: none; }
+    .footer-section li { margin-bottom: 0.5rem; }
+    .footer-section a { color: var(--footer-text); text-decoration: none; font-size: 0.9rem; line-height: 1.2; transition: color 0.3s; }
+    .footer-section a:hover { color: var(--footer-link-hover); }
+    @media (max-width: 768px) {
+      .footer-container { display: flex; flex-direction: column; gap: 1.5rem; }
+    }
+    .footer-legal {
+      background: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="file:///C:/Users/Tomas/Desktop/template/template.html" target="_blank"><img src="file:///C:/Users/Tomas/Desktop/template/gepard-logo.svg" alt="Logo GEPARD FINANCE"></a></div>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
+      <ul>
+        <li><a href="https://gpf.cz/kariera" target="_blank">Staňte se makléřem GEPARD</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKvqeMmACZnpxmuhCcxS-CB0H4GEsFX_B2AsyMG-9TYxpNHg/viewform?usp=dialog"></iframe>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="file:///C:/Users/Tomas/Desktop/template/gepard-logo-2.svg" alt="Logo GEPARD FINANCE">
+      </div>
+      <div class="footer-section">
+        <h4>Produkty</h4>
+        <ul>
+          <li><a href="https://gpf.cz/bydleni-pro-rodinu" target="_blank">Bydlení pro rodinu</a></li>
+          <li><a href="https://gpf.cz/hypoteka-50" target="_blank">Hypotéka 50+</a></li>
+          <li><a href="https://gpf.cz/prvni-bydleni" target="_blank">První bydlení</a></li>
+          <li><a href="https://gpf.cz/stavebni-sporeni" target="_blank">Stavební spoření</a></li>
+          <li><a href="https://gpf.cz/financovani-fotovoltaiky" target="_blank">Investice do fotovoltaiky</a></li>
+          <li><a href="https://gpf.cz/refinancovani-hypoteky" target="_blank">Refinancování hypotéky</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Gepard Finance</h4>
+        <ul>
+          <li><a href="https://gpf.cz/kariera" target="_blank">Kariéra</a></li>
+          <li><a href="https://gpf.cz/fransizy" target="_blank">Možnosti spolupráce</a></li>
+          <li><a href="https://gpf.cz/affiliate-program" target="_blank">Affiliate program</a></li>
+          <li><a href="https://gpf.cz/o-nas" target="_blank">O nás</a></li>
+          <li><a href="https://gpf.cz/nejvyhodnejsi-hypoteka" target="_blank">Nejvýhodnější hypotéka</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Kontakty</h4>
+        <ul>
+          <li><a href="tel:271122960">271 122 960</a></li>
+          <li><a href="mailto:info@gpf.cz">info@gpf.cz</a></li>
+          <li><a href="https://gpf.cz/kontakty-centrala" target="_blank">Centrála společnosti</a></li>
+          <li><a href="https://gpf.cz/pobocky" target="_blank">Obchodní místa v ČR</a></li>
+          <li><a href="https://www.gpre.cz/" target="_blank">Gepard reality</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Právní</h4>
+        <ul>
+          <li><a href="https://gpf.cz/zpracovani-osobnich-udaju" target="_blank">Zpracování osobních údajů</a></li>
+          <li><a href="https://gpf.cz/zpracovani-cookies" target="_blank">Zásady cookies</a></li>
+          <li><a href="https://gpf.cz/reklamacni-rad" target="_blank">Reklamační řád</a></li>
+          <li><a href="https://gpf.cz/eticky-kodex" target="_blank">Etický kodex</a></li>
+          <li><a href="https://gpf.cz/whistleblowing" target="_blank">Whistleblowing</a></li>
+          <li><a href="https://gpf.cz/rizeni-stretu-zajmu" target="_blank">Řízení střetu zájmů</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2024 GEPARD FINANCE a.s. Všechna práva vyhrazena.</p>
+      <p>Společnost GEPARD FINANCE a.s. je samostatným zprostředkovatelem spotřebitelského úvěru a poskytuje doporučení podle § 3 odst. 1 písm. b) bod 3 zákona 257/2016 Sb. o spotřebitelském úvěru.</p>
+    </div>
+  </footer>
+</body>
+</html>
